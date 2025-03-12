@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentSlide = 0;
     const GAP = 48;
 
-
     function createDots() {
       dotsContainer.innerHTML = '';
       totalSlides = Math.ceil(totalItems / visibleCount);
