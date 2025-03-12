@@ -34,6 +34,12 @@ body h3 {
   font-weight: 600;
 }
 
+
+body h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .discount {
   display: flex;
   justify-content: space-between;
@@ -71,4 +77,107 @@ header nav {
 
 .home img {
   width: 100%;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: #F7F2EC;
+  padding: 64px 0;
+}
+
+.showcase div p {
+  font-size: 20px;
+}
+
+.showcase h1, h3, p {
+  text-align: center;
+}
+
+.showcase h1 {
+  max-width: 1100px;
+  margin-bottom: 8px;
+}
+
+.showcase h3 {
+  margin-bottom: 8px;
+}
+
+.showcase p {
+  max-width: 967px;
+}
+
+.showcase ul {
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  background-color: #fff;
+  padding: 4px;
+}
+
+article header {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  justify-content: center;
+}
+
+.la-primavera {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 62px;
+  border: 3px solid #C9B079;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 8px 20px;
+}
+
+.teddy figure {
+  background-color: #F7F2EC;
+  border-radius: 28px 28px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 256px;
+}
+
+.teddy {
+  gap: 42px
+}
+
+.teddy article {
+  width: 300px;
+}
+
+.teddy article header {
+  gap: 8px;
+}
+
+.teddy article header p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.teddy-button {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 28px;
+  border: 2px solid #FFF;
+  background: #BF8B70;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.35);
+  padding: 12px 0;
+  width: 237px;
 }
