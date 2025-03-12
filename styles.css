@@ -21,23 +21,39 @@ body button {
 
 body h1 {
   font-size: 48px;
+  text-align: center;
   font-weight: 600;
+
+  @media (max-width: 500px) {
+    font-size: 36px;
+  }
 }
 
 body h2 {
   font-size: 36px;
   font-weight: 600;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
 }
 
 body h3 {
   font-size: 24px;
   font-weight: 600;
+  text-align: center;
 }
 
 
 body h4 {
   font-size: 20px;
   font-weight: 600;
+}
+
+body h6 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .discount {
@@ -47,11 +63,13 @@ body h4 {
   background-color: #F0DACD;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 64px ;
-  align-items: center;
+body {
+  > header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 64px ;
+    align-items: center;
+  }
 }
 
 header button {
@@ -85,7 +103,7 @@ header nav {
   align-items: center;
   gap: 50px;
   background-color: #F7F2EC;
-  padding: 64px 0;
+  padding: 64px 16px;
 }
 
 .showcase div p {
@@ -116,17 +134,25 @@ header nav {
   justify-content: center;
 }
 
-article {
+.teddy-article {
   display: flex;
   flex-direction: column;
   max-width: 390px;
+  width: 100%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 28px;
   background-color: #fff;
   padding: 4px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 64px ;
+    align-items: center;
+  }
 }
 
-article header {
+.teddy-article header {
   display: flex;
   flex-direction: column;
   padding: 24px 20px;
@@ -142,6 +168,8 @@ article header {
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 8px 20px;
+  width: fit-content;
+  font-style: italic;
 }
 
 .teddy figure {
@@ -180,4 +208,141 @@ article header {
   box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.35);
   padding: 12px 0;
   width: 237px;
+}
+
+.most-wanted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 16px;
+  background-color: #F7F2EC;
+}
+
+.most-wanted ul {
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.for-you, .clients-opinion {
+  text-align: center;
+  padding: 64px 16px;
+  background-color: #E1EDE9;
+}
+.for-you, .clients-opinion {
+  h1 {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.for-you, .clients-opinion {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } 
+}
+
+.for-you, .clients-opinion {
+  article {
+    border-radius: 31px;
+    border: 3px solid #C9B079;
+    background: #FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 378px;
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.carousel-inner {
+  display: flex;
+  gap: 48px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-inner li {
+  flex: 0 0 calc((100% - 96px) / 3);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 600px;
+  }
+  .carousel-inner li {
+    flex: 0 0 calc((100% - 48px) / 2);
+  }
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+.carousel-dots button {
+  border: none;
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.carousel-dots button.active {
+  background: #3A2215;
+}
+
+.clients-opinion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.clients-opinion article {
+  p, h6 {
+    text-align: start;
+  }
+
+  p {
+    line-height: 150%;
+  }
+
+  header {
+    display: flex;
+    align-self: start;
+    gap: 8px;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .avatar {
+    border: 1px solid #C9B079;
+    font-size: 36px;
+    font-weight: 500;
+    border-radius: 100%;
+    height: 56px !important;
+    width: 56px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
