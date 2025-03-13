@@ -495,3 +495,80 @@ header nav {
 .tocco-speciale-grid {
   aspect-ratio: 2 / 1;
 }
+
+footer {
+  background-color: #F0DACD;
+
+  hr {
+    height: 6px;
+    background-color: #C9B079;
+    border: none;
+    margin: 0 64px;
+  }
+
+  >:last-child {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 64px;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+footer .contact {
+  display: flex;
+  padding: 32px 64px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  h2, p {
+    text-align: start;
+  }
+
+  form {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+
+  input {
+    border: 1px solid #000;
+    background-color: #FFF;
+    padding: 12px;
+  }
+
+  button {
+    border: 1px solid #000;
+    background: #BF8B70;
+    padding: 12px;
+    color: #fff;
+  }
+}
+
+footer .about {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 64px;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    h6 {
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    a:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
