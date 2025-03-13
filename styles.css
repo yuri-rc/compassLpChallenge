@@ -116,6 +116,56 @@ header nav {
   }
 }
 
+.home {
+  position: relative;
+}
+
+.di-sconto {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  max-width: 100vw;
+  width: calc(100% - 32px);
+  font-size: 24px;
+  padding: 0 16px;
+
+  @media (max-width: 990px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+  }
+
+  div {
+    padding: 24px 42px;
+    font-weight: 500;
+  }
+
+  >:first-child {
+    z-index: 1;
+    border-radius: 0px 0px 60px 60px;
+    border: 3px solid #C9B079;
+    box-shadow: 0px 4px 56px 0px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    padding-right: 88px;
+  }
+
+  >:last-child {
+    z-index: 2;
+    border-radius: 0px 0px 60px 60px;
+    border: 3px solid #BAA370;
+    background: #BF8B70;
+    box-shadow: 0px 4px 56px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    margin-left: -88px;
+  }
+}
+
 .home img {
   width: 100%;
 }
